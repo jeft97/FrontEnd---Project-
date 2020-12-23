@@ -1,0 +1,554 @@
+      /*global variables*/
+      
+       :root {
+          --primary-color: #222222;
+          --color-dark: #ed1f34;
+          --color-light: #f04455;
+          --second-color: #fff;
+          --btn-color: #000;
+          --color-bg-text-: #f3f3f3;
+          --color-text-about: #8d8d8d;
+      }
+      /*reset of page*/
+      
+      *,
+      *::after,
+      *::before {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          outline: none;
+          border: none;
+      }
+      
+      html {
+          font-size: 90%;
+      }
+      
+      body {
+          list-style: none;
+          font-weight: 400;
+          font-family: 'Roboto', sans-serif;
+          background: var(--primary-color);
+      }
+      
+       ::selection {
+          background-color: var(--color-light);
+          color: var(--second-color);
+      }
+      
+      .header {
+          width: 100%;
+          min-height: 100vh;
+          background: url(../img/bg-banner.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+      }
+      
+      .header-sup {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding-top: 1.25rem;
+          z-index: 100;
+      }
+      
+      .hearder-btn-menu img {
+          width: 1.875rem;
+      }
+      
+      .header-btn-search img {
+          width: 1.5625rem;
+      }
+      
+      .header-logo {
+          color: var(--second-color);
+          text-decoration: none;
+          font-weight: 500;
+      }
+      
+      .header-list-slaid {
+          position: absolute;
+          top: 50%;
+          left: 16%;
+          transform: translate(-50%, -50%);
+      }
+      
+      .header-list-slaid li {
+          display: block;
+          padding-top: 4rem;
+      }
+      
+      .header-list-slaid li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.25rem;
+          opacity: .5;
+          font-weight: lighter;
+      }
+      
+      .header-list-slaid li a.list-active {
+          opacity: 1;
+          font-weight: normal;
+      }
+      
+      .header-article-banner {
+          position: absolute;
+          top: 58%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: var(--second-color);
+          text-transform: uppercase;
+          text-align: center;
+      }
+      
+      .article-banner-sup {
+          display: block;
+          font-size: 3rem;
+          font-weight: 200;
+      }
+      
+      .article-banner-sub {
+          font-size: 4rem;
+          font-weight: bold;
+      }
+      
+      .article-banner-main {
+          font-size: 7.5rem;
+          display: block;
+          font-weight: bold;
+          color: var(--color-light);
+      }
+      
+      .btn-banner {
+          margin-top: 5rem;
+      }
+      
+      .article-btn-more {
+          text-decoration: none;
+          padding: 0.625rem 2.5rem;
+          text-align: center;
+          color: var(--second-color);
+          border: 0.125rem solid var(--second-color);
+          transition: .5s ease-out;
+      }
+      /*animation with hover on btn*/
+      
+      .article-btn-more:hover {
+          background-color: var(--second-color);
+          color: var(--primary-color);
+          transition: .5s ease-in;
+          font-weight: bold;
+      }
+      /*end full header*/
+      /*section about*/
+      
+      .section-bg {
+          width: 100%;
+          background-color: var(--second-color);
+          height: auto;
+          min-height: 30rem;
+          position: relative;
+      }
+      
+      .bg-section {
+          font-size: 23rem;
+          color: var(--color-bg-text-);
+          font-weight: bold;
+          position: absolute;
+          top: 0;
+          left: -14rem;
+      }
+      
+      .section-about-us {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      
+      .section-about-us-content-text {
+          text-align: left;
+          display: block;
+          width: 23.75rem;
+      }
+      
+      .section-about-us-content-text h3 {
+          margin-bottom: 1.25rem;
+          font-size: 4.375rem;
+          text-transform: uppercase;
+      }
+      
+      .section-about-us-content-text p {
+          font-size: 1rem;
+          text-align: left;
+          color: var(--color-text-about);
+          line-height: 1.5625rem;
+      }
+      
+      .section-about-us-btn {
+          margin-top: 1.875rem;
+      }
+      
+      .btn-about-us-check {
+          text-align: center;
+          padding: 0.625rem 1.25rem;
+          border: 0.125rem solid var(--color-text-about);
+          color: var(--color-text-about);
+          text-decoration: none;
+          font-size: 1rem;
+          transition: all .5s ease-in-out;
+      }
+      
+      .btn-about-us-check:hover {
+          border-color: var(--primary-color);
+          background-color: var(--primary-color);
+          color: var(--second-color);
+          transition: .5s ease-in;
+      }
+      
+      .section-about-us-concert {
+          position: relative;
+          height: 100%;
+          margin-right: 2.85rem;
+      }
+      
+      .section-about-us-concert img {
+          width: 28.125rem;
+          box-shadow: 0.125rem 0.125rem 0.93rem rgba(0, 0, 0, 0.3);
+      }
+      
+      .section-about-us-concert span {
+          position: absolute;
+          bottom: -2.5rem;
+          right: -3rem;
+          font-size: 4.5rem;
+          color: var(--color-dark);
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+      /*section video*/
+      
+      .section-video {
+          width: 100%;
+          height: 100%;
+          min-height: 30rem;
+          background: url(../img/main-foto-bg.png) no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      .set-element {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+      }
+      
+      .player-video img {
+          width: 5rem;
+      }
+      
+      .section-video-content {
+          text-align: center;
+          color: var(--second-color);
+          line-height: 1.25rem;
+          font-size: 1rem;
+      }
+      
+      .section-video-content h3 {
+          font-size: 3.125rem;
+          text-transform: uppercase;
+          margin-bottom: 1.875rem;
+          text-align: center;
+          color: var(--color-light);
+      }
+      
+      .section-video-content p {
+          line-height: 1.6rem;
+      }
+      
+      .section-video-content p span {
+          background-color: var(--color-light);
+      }
+      
+      .section-video-content {
+          width: 100%;
+          max-width: 31.25rem;
+      }
+      
+      .section-video-list li {
+          list-style: none;
+          padding-bottom: 2.5rem;
+      }
+      
+      .section-video-list li a {
+          color: var(--second-color);
+          text-decoration: none;
+          font-weight: lighter;
+          opacity: .5;
+      }
+      
+      .section-video-list li .attivo {
+          opacity: 1;
+          font-weight: bold;
+      }
+      /*section-photo*/
+      
+      .section-photo {
+          width: 100%;
+      }
+      
+      .section-photo-album img {
+          width: 25%;
+          display: inline-block;
+          margin-left: -0.187rem;
+      }
+      
+      .section-photo-bg {
+          width: 100%;
+          min-height: 33rem;
+          background: url(../img/bg-p-footer.png) no-repeat;
+          background-size: cover;
+          background-position: center;
+          margin-top: -0.125rem;
+      }
+      /*footer*/
+      
+      .footer {
+          width: 100%;
+          height: 100%;
+          min-height: 15rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      .content-footer {
+          text-align: center;
+          color: var(--color-bg-text-);
+          font-weight: lighter;
+      }
+      
+      .content-footer p {
+          opacity: .6;
+      }
+      /*menu-mobile*/
+      
+      .menu-mobile {
+          width: 100%;
+          height: 100vh;
+          background-color: var(--primary-color);
+          padding: 4rem;
+          position: fixed;
+          z-index: 10000;
+          top: 0;
+          left: -125rem;
+          transition: 1s;
+      }
+      
+      .menu-mobileViews {
+          left: 0;
+          transition: 1s;
+      }
+      
+      .menu-nav {
+          margin-top: 6.25rem;
+      }
+      
+      .menu-mobile-sup {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: -2rem;
+      }
+      
+      .menu-nav ul li {
+          list-style: none;
+          font-size: 2.5rem;
+          text-align: center;
+          text-transform: capitalize;
+          padding-bottom: 3rem;
+      }
+      
+      .header-logo-menu-mobile {
+          color: var(--second-color);
+          text-decoration: none;
+      }
+      
+      .menu-nav ul li a {
+          text-decoration: none;
+          color: var(--color-text-about);
+          transition: .5s ease-in;
+      }
+      
+      .menu-nav ul li a:hover {
+          color: var(--color-light);
+          transition: .5s ease-in;
+      }
+      
+      .header-logo-menu-mobile {
+          width: 100%;
+          max-width: 6.25rem;
+      }
+      
+      .btn-close {
+          width: 100%;
+          max-width: 3.125rem;
+      }
+      
+      .btn-close img {
+          display: block;
+          margin: auto;
+      }
+      
+      .input-serch {
+          width: 100%;
+          max-width: 40.625rem;
+          position: relative;
+      }
+      
+      .btn-search-mobile {
+          position: absolute;
+          top: 0.5rem;
+          right: 0.625rem;
+      }
+      
+      .btn-search-mobile img {
+          width: 1.562rem;
+      }
+      
+      .input-serch input {
+          border-bottom: 0.2rem solid var(--color-text-about);
+          background-color: transparent;
+          color: var(--color-text-about);
+          font-size: 1.8rem;
+          width: 100%;
+          height: 3rem;
+          padding-bottom: 0.5rem;
+      }
+      
+      .input-serch input::placeholder {
+          color: var(--color-text-about);
+      }
+      /*End menu mobile*/
+      /*Media Query*/
+      /*tablet 768px*/
+      
+      @media only screen and (max-width:768px) {
+          html {
+              font-size: 80%;
+          }
+          .section-photo-album img {
+              width: 50%;
+              margin-top: -0.25rem;
+          }
+          .set-element {
+              width: 100%;
+              flex-direction: column;
+          }
+          .section-video-list li {
+              display: inline-block;
+              padding-right: 1.875rem;
+              padding-left: 1.875rem;
+          }
+          .section-video-list {
+              margin-top: 3.75rem;
+          }
+          .section-video-content {
+              margin-top: 1.875rem;
+          }
+          .section-about-us {
+              flex-direction: column;
+          }
+          .section-bg {
+              min-height: 50rem;
+          }
+          .bg-section {
+              display: none;
+          }
+          .section-about-us-content-text {
+              width: 80%;
+              margin-bottom: 3.75rem;
+              text-align: center;
+          }
+          .section-about-us-content-text p {
+              text-align: center;
+          }
+          .section-about-us-concert {
+              width: 80%;
+              margin: auto;
+              position: relative;
+          }
+          .section-about-us-concert span {
+              font-size: 6rem;
+          }
+          .section-about-us-concert img {
+              width: 80%;
+              margin-left: 10%;
+          }
+          .article-banner-sup {
+              font-size: 2rem;
+          }
+          .article-banner-main {
+              font-size: 6rem;
+          }
+          .article-banner-sub {
+              font-size: 3rem;
+          }
+          /*menu mobile*/
+          .menu-mobile {
+              padding: 4rem 1rem 1rem 1rem;
+          }
+          .menu-mobile-sup {
+              justify-content: space-between;
+              width: 100%;
+          }
+      }
+      
+      @media only screen and (max-width:469px) {
+          html {
+              font-size: 90%;
+          }
+          .set-element {
+              width: 90%;
+          }
+          .section-video-content h3 {
+              font-size: 2rem;
+          }
+          .section-about-us-concert {
+              width: 100%;
+          }
+          .section-about-us-concert span {
+              font-size: 3.5rem;
+              right: 1rem;
+          }
+          .header-list-slaid {
+              display: none;
+          }
+          .header-article-banner {
+              width: 95%;
+          }
+          .article-banner-sup {
+              font-size: 2rem;
+          }
+          .article-banner-main {
+              font-size: 5.5rem;
+          }
+          .article-banner-sub {
+              font-size: 3rem;
+          }
+          .section-photo-album img {
+              width: 100%;
+          }
+      }

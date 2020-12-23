@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    z-index: 10000;
+    padding: 2em 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*barra de rolagem*/
+
+.rola {
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 0.4em 3em;
+}
+
+.rola .logo {
+    color: #3d3f41;
+}
+
+.rola .nav-menu li a {
+    color: #3d3f41;
+}
+
+.rola .menu-mobile a {
+    background-color: #fa0156;
+}
+
+.rola .menu-mobile a img {
+    width: 30px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 40px;
+}
+
+.logo span {
+    color: #fa0156;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.nav-menu li a:hover {
+    color: #fa0156;
+    transition: 0.2s;
+}
+
+.content-text {
+    text-align: center;
+    width: 100%;
+    max-width: 75%;
+    margin-top: 70px;
+}
+
+.content-text h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+.content-text p {
+    color: #fff;
+    font-size: 1em;
+}
+
+.btn {
+    width: 180px;
+    padding: 1em;
+    margin: 30px auto;
+    background-color: #fa0156;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.btn a:hover {
+    text-decoration: underline;
+}
+
+
+/*section corpo principale*/
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5em 4px;
+}
+
+.about-text {
+    max-width: 600px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.about-text h1 {
+    color: #3d3f41;
+    font-size: 2em;
+}
+
+.about-text h1 span {
+    font-size: 2.5em;
+    color: #fa0156;
+}
+
+.about-text p {
+    margin-top: -20px;
+}
+
+.about img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.menu {
+    padding: 4em 0em;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-text h1 {
+    color: #3d3f41;
+    font-size: 2em;
+}
+
+.menu-text h1 span {
+    font-size: 3em;
+    color: #fa0156;
+}
+
+.menu-text p {
+    margin-top: -25px;
+}
+
+.card-img {
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-img article {
+    width: 100%;
+    min-height: 240px;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.card-img article:nth-child(1) {
+    background: url(../img/menu.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card-img article:nth-child(2) {
+    background: url(../img/menu1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card-img article:nth-child(3) {
+    background: url(../img/menu2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card-img article:nth-child(4) {
+    background: url(../img/menu3.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card-img article:nth-child(5) {
+    background: url(../img/menu4.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card-img article:nth-child(6) {
+    background: url(../img/menu5.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card-img article:nth-child(7) {
+    background: url(../img/menu6.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card-img article:nth-child(8) {
+    background: url(../img/menu2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.scuro {
+    background-color: rgba(250, 1, 96, 0.70);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scuro:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+
+/*icon do fundo scuro*/
+
+.fas {
+    color: #fff;
+    order: 0;
+}
+
+.scuro span {
+    color: #fff;
+    order: 1;
+    font-size: 1.2em;
+}
+
+
+/*section cuochi*/
+
+.cuocco {
+    width: 90%;
+    margin: 4em auto;
+}
+
+.card-cuoco {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cuochi {
+    margin-top: 2em;
+}
+
+.cuochi img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.cuochi p {
+    font-weight: 300;
+    font-size: 1em;
+    color: #111;
+}
+
+.cuochi p span {
+    color: #fa0156;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cuocco-text {
+    text-align: center;
+}
+
+
+/*section testimonial*/
+
+.color h1 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.color p {
+    color: #fff;
+    margin-top: -20px;
+}
+
+.color span {
+    font-weight: bold;
+}
+
+.testimonial {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/bg2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.card-testimonial {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.card-testimonial article {
+    width: 100%;
+    max-width: 333px;
+    min-height: 400px;
+    background: #fff;
+    text-align: center;
+    padding: 1em;
+    margin: 20px;
+}
+
+.card-testimonial article p {
+    color: #707070;
+    text-align: inherit;
+    margin-bottom: 35px;
+}
+
+.card-testimonial article span {
+    color: #fa0156;
+    font-weight: 500;
+}
+
+.cicle-1,
+.cicle-2,
+.cicle-3 {
+    width: 100px;
+    height: 100px;
+    background-color: #fa0156;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.cicle-1 {
+    background: url(../img/testi1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.cicle-2 {
+    background: url(../img/testi2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.cicle-3 {
+    background: url(../img/testi3.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/bg3.jpg) no-repeat right;
+    background-size: cover;
+}
+
+.mudulo-contact {
+    width: 100%;
+    max-width: 450px;
+    min-height: 400px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    margin-top: 30px;
+    float: left;
+    margin-left: 10%;
+}
+
+.clear {
+    clear: both;
+}
+
+.mudulo-contact form {
+    margin-top: 2%;
+}
+
+
+/*input modulo*/
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 400px;
+    min-height: 40px;
+    margin-bottom: 10px;
+    padding: 1em;
+    outline: 0;
+    border: 1.5px solid #707070;
+    border-radius: 0;
+    font-weight: 500;
+    color: #707070;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+input::placeholder {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+textarea::placeholder {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.mudulo-contact span {
+    color: #3d3f41;
+    font-weight: 700;
+}
+
+input[type="submit"] {
+    width: 100px;
+    padding: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #fa0156;
+    border: 0;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/*footer da pagina*/
+
+footer {
+    text-align: center;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #707070;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+
+/*menu-mobile*/
+
+.menu-mobile {
+    display: none;
+}
+
+
+/*colori dei icons sociais*/
+
+footer nav a,
+.facebook,
+.twitter,
+.youtube {
+    color: #fa0156;
+    font-size: 0.8em;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+
+.facebook:hover {
+    color: #3b5998;
+    transition: 0.5s;
+}
+
+.youtube:hover {
+    color: #FF0000;
+    transition: 0.5s;
+}
+
+.twitter:hover {
+    color: #00acee;
+    transition: 0.5s;
+}
+
+
+/* Risponsivo*/
+
+@media screen and (max-width: 1024px) {
+    .about-text {
+        max-width: 800px;
+    }
+    .about img {
+        max-width: 800px;
+        margin-top: 30px;
+    }
+    .mudulo-contact {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-text {
+        max-width: 650px;
+    }
+    .about img {
+        max-width: 650px;
+    }
+    .content-text h2 {
+        font-weight: 700;
+        font-size: 60px;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mudulo-contact {
+        margin-left: 10%;
+    }
+    .content-text h2 {
+        font-weight: 300;
+        font-size: 60px;
+    }
+    .content {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mudulo-contact {
+        margin-left: 5%;
+    }
+    .about-text {
+        max-width: 400px;
+    }
+    .about img {
+        max-width: 400px;
+    }
+    .mudulo-contact {
+        max-width: 300px;
+        min-height: 200px;
+        margin-left: 14%;
+    }
+    .cuocco-text h1,
+    .menu-text h1 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .cuocco-text p,
+    .menu-text p {
+        font-size: 0.8em;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    .content-text {
+        max-width: 80%;
+    }
+    .content-text p {
+        display: none;
+    }
+    .content-text h2 {
+        font: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mudulo-contact {
+        max-width: 300px;
+        min-height: 200px;
+        margin-left: 14%;
+    }
+    .cuocco-text h1 {
+        font-size: 1.4em;
+    }
+    .cuocco-text p {
+        font-size: 0.8em;
+    }
+    .card-testimonial article {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .about-text {
+        max-width: 300px;
+    }
+    .about img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .mudulo-contact {
+        max-width: 250px;
+        min-height: 200px;
+        margin-left: 20%;
+    }
+}

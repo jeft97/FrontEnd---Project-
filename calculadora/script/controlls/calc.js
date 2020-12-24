@@ -1,30 +1,30 @@
 class CalcController {
 
     constructor() {
-        this._displayCalc = "0";
+        this._calcItem = document.querySelector("#calc");
+        this._displayItem = document.querySelector("#display");
         this._calcElem;
         this.initialize();
     }
 
     get displayCalc() {
-        return this._displayCalc;
+        return this._displayItem.innerHTML
     }
     set displayCalc(valueDisplayCalc) {
-        this._displayCalc = valueDisplayCalc;
+        this.this._displayItem.innerHTML = valueDisplayCalc;
     }
     get calcElem() {
-        return this._calcElem;
+        return this._calcItem.innerHTML;
     }
     set calcElem(valueCalcElem) {
-        this._calcElem = valueCalcElem;
+        this._calcItem.innerHTML = valueCalcElem;
     }
 
 
     initialize() {
-        let displayItem = document.querySelector("#display");
-        let calcItem = document.querySelector("#calc");
-        displayItem.innerHTML = "0";
-        calcItem.innerHTML = "309 x 422";
+
+        this._displayItem.innerHTML = "0";
+        this._calcItem.innerHTML = "309 x 422";
 
     }
 

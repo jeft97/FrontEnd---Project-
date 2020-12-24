@@ -1,0 +1,119 @@
+:root {
+    --first-color: #e6e9eb;
+    --second-color: #f4f4f4;
+    --color-text: #fff;
+    --color-dark: #eaeaea;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    border: none;
+}
+
+html {
+    font-size: 100%;
+    height: 100vh;
+}
+
+body {
+    font-weight: 600;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+}
+
+.calculator {
+    width: 100%;
+    max-width: 320px;
+    height: 500px;
+    background-color: var(--second-color);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    position: relative;
+}
+
+.content-sup {
+    width: 100%;
+    min-height: 150px;
+    background: rgb(223, 72, 147);
+    background: linear-gradient(47deg, rgba(223, 72, 147, 1) 24%, rgba(224, 105, 0, 0.9981034650188201) 80%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.content-display {
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 170px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    color: var(--color-text);
+    padding: 20px;
+}
+
+.content-result {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.content-result,
+.content-calc {
+    display: inline-block;
+    width: 100%;
+}
+
+.content-calc {
+    font-size: 20px;
+    font-weight: lighter;
+    color: var(--second-color);
+}
+
+.content-main {
+    width: 100%;
+    height: 350px;
+}
+
+.item {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.darck {
+    background-color: var(--color-dark);
+}
+
+.ligther {
+    background-color: var(--second-color);
+}
+
+.item a {
+    display: inline-block;
+    width: 24.5%;
+    color: #62676b;
+    font-size: 19px;
+    font-weight: normal;
+    margin-right: -4px;
+}
+
+.item .igual {
+    color: var(--color-text);
+    font-weight: bold;
+    background: rgb(223, 72, 147);
+    background: linear-gradient(47deg, rgba(223, 72, 147, 1) 24%, rgba(224, 105, 0, 0.9981034650188201) 80%);
+    border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.7;
+    font-size: 1.6rem;
+}
+
+.heading-date {
+    width: 100%;
+    max-width: 70rem;
+    background-color: $color-white;
+    padding: 3rem 4rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 .5rem 4rem rgba($color-black, .2);
+    border-radius: .5rem;
+    .date__info {
+        display: inline-block;
+        text-align: center;
+        &:not(:last-child) {
+            border-right: .1rem solid rgba($color-black, .2);
+            margin-right: 5.5rem;
+            padding-right: 5.5rem;
+        }
+        &--value {
+            @include breakline;
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+        }
+        &--text {
+            @include breakline;
+        }
+    }
+}
+
+.card-text {
+    position: absolute;
+    bottom: 6%;
+    left: 4%;
+    color: $color-white;
+    &--main {
+        @include breakline;
+        font-weight: 600;
+        margin-bottom: .3rem;
+        font-size: 2rem;
+    }
+    &--sub {
+        @include breakline;
+        font-size: 1.2rem;
+    }
+}
+
+.heading__terciary {
+    color: $color-white;
+    &--main {
+        @include breakline;
+        margin-bottom: $space-margin--small;
+        font-size: $width-title-big;
+    }
+    &--sub {
+        @include breakline;
+        font-size: $width-title-media;
+        font-weight: 300;
+    }
+}

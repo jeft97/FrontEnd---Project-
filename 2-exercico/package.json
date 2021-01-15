@@ -1,0 +1,15 @@
+{
+    "name": "2-exercico",
+    "version": "1.0.0",
+    "description": "the web site of trainning ",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "author": "jeft_97",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^5.0.0",
+        "sass": "^1.32.2"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "folders": [
+		{
+			"path": "..\\advanced-css-course-master\\firstProject"
+		},
+		{
+			"path": "..\\Javascript - Full course\\complete-javascript-course-master (1)\\complete-javascript-course-master\\05-Guess-My-Number"
+		},
+		{
+			"path": "..\\Javascript - Full course\\complete-javascript-course-master (1)\\complete-javascript-course-master\\06-Modal\\starter"
+		},
+		{
+			"path": "..\\advanced-css-course-master\\advanced-css-course-master\\Natours\\css-advenced"
+		},
+		{
+			"path": "..\\Javascript - Full course\\complete-javascript-course-master (1)\\complete-javascript-course-master\\07-Pig-Game\\starter"
+		},
+		{
+			"path": "..\\Javascript - Full course\\complete-javascript-course-master (1)\\complete-javascript-course-master\\08-Behind-the-Scenes"
+		},
+		{
+			"path": "..\\Javascript - Full course\\complete-javascript-course-master (1)\\complete-javascript-course-master\\09-Data-Structures-Operators"
+		},
+		{
+			"path": "..\\Javascript - Full course\\complete-javascript-course-master (1)\\trienoDiario"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\curso--javascrit"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "2-exercico"
+    }
+}

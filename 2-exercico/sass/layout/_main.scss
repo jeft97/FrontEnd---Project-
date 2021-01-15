@@ -1,0 +1,24 @@
+.section__destinations {
+    background-color: $color-white;
+    padding: 12rem 5rem;
+}
+
+.section__destinations--sub {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading__secondary {
+    color: $color-grey;
+    &--main {
+        @include breakline;
+        font-size: 3.5rem;
+        margin-bottom: $space-margin--small;
+    }
+    &--sub {
+        @include breakline;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}

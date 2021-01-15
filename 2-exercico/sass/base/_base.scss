@@ -1,0 +1,19 @@
+// reset of page
+* {
+    &,
+    &::after,
+    &::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+        outline: 0;
+    }
+}
+
+html {
+    font-size: 62.25%;
+}
+
+body {
+    box-sizing: border-box;
+}

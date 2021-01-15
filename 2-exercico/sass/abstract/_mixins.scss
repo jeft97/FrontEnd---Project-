@@ -1,0 +1,31 @@
+@mixin clear {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin execptLastChild {
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+    }
+}
+
+@mixin borderRadiusLeft {
+    border-top-left-radius: $width-border-radius;
+    border-bottom-left-radius: $width-border-radius;
+}
+
+@mixin borderRadiusRight {
+    border-top-right-radius: $width-border-radius;
+    border-bottom-right-radius: $width-border-radius;
+}
+
+@mixin hoverBtn {
+    background-color: $color-dark-Saturation;
+}
+
+@mixin breakline {
+    display: block;
+}

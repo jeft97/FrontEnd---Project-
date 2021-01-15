@@ -1,0 +1,47 @@
+// animation
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// class animation scroll
+.roll {
+    background-color: $color-white;
+    position: fixed;
+    padding: 3.8rem 2rem;
+    transition: all .4s ease-in;
+    box-shadow: 0 .2rem 1.5rem rgba($color-black, .2);
+    .btn--menu {
+        background-color: $color-dark;
+        color: $color-white;
+        &:hover {
+            background-color: transparent;
+            color: $color-dark;
+            border: .2rem solid $color-dark;
+            transition: all .4s;
+        }
+    }
+    .header__menu--sub {
+        color: $color-dark;
+    }
+}

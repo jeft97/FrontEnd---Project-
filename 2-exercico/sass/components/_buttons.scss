@@ -1,0 +1,100 @@
+.btn {
+    margin-left: 2rem;
+    border-radius: .3rem;
+    padding: .8rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-white;
+    background-color: $color-dark;
+    &--menu {
+        color: $color-white;
+        text-decoration: none;
+        transition: all .5s ease-out;
+        backface-visibility: hidden;
+        &:hover {
+            background-color: $color-white;
+            color: $color-dark;
+        }
+    }
+}
+
+.heading__form {
+    animation: moveInBottom 1s ease-in .2s;
+    &-seachBox {
+        vertical-align: middle;
+        width: 80%;
+        float: left;
+        &--inputSearch {
+            width: 100%;
+            height: 4rem;
+            padding: 1rem 2rem;
+            line-height: 4rem;
+            font-size: 1.7rem;
+            color: $color-grey;
+            outline: 0;
+            border: 0;
+            text-transform: uppercase;
+            @include borderRadiusLeft;
+            &::placeholder {
+                font-size: 1.4rem
+            }
+        }
+    }
+    .btn-box {
+        vertical-align: middle;
+        width: calc(100% - 80%);
+        float: left;
+        .btn--search {
+            width: 100%;
+            background-color: $color-dark;
+            border: none;
+            color: $color-white;
+            text-align: center;
+            height: 4rem;
+            @include borderRadiusRight;
+            cursor: pointer;
+            transition: all .4s ease-out;
+            &:hover {
+                background-color: $color-dark-Saturation;
+            }
+        }
+    }
+}
+
+.btn--small {
+    padding: .5rem 1rem;
+    background-color: $color-dark;
+    border-radius: .4rem;
+}
+
+.btn--media {
+    &:link,
+    &:visited {
+        padding: 1rem 2rem;
+        color: $color-grey;
+        text-decoration: none;
+        border: .2rem solid $color-grey;
+        border-radius: .4rem;
+        transition: all .2s ease-out;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 1rem 2rem rgba($color-black, .3);
+        }
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+        }
+    }
+}
+
+.btn {
+    text-decoration: none;
+    &--big {
+        padding: 2rem 4rem;
+        transition: all .2s ease-out;
+        &:hover {
+            background-color: $color-dark-Saturation;
+            transform: translateY(-10px);
+        }
+    }
+}

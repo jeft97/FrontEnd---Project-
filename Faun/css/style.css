@@ -353,7 +353,7 @@
           position: fixed;
           z-index: 10000;
           top: 0;
-          left: -125rem;
+          left: -100vw;
           transition: 1s;
       }
       

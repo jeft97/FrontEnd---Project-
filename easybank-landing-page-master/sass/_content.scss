@@ -1,0 +1,86 @@
+.easybank {
+    background-color: $color-light-grayish-blue;
+    grid-column: full-start/full-end;
+    padding: 10rem 11rem;
+    @include respond(phone) {
+        padding: 10rem 4rem;
+    }
+    &__text {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $color-dark-Blue;
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+    }
+    &__article {
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 6rem;
+        position: relative;
+    }
+}
+
+.article {
+    &__text {
+        font-size: 1.5rem;
+        color: $color-dark-Blue;
+        text-align: justify;
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+    }
+    &__icon {
+        @include respond(phone) {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.articles {
+    background-color: $color-very-light-gray;
+    grid-column: full-start/full-end;
+    padding: 10rem 11rem;
+    @include respond(phone) {
+        padding: 10rem 4rem;
+    }
+    &-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+        grid-gap: 2.5rem;
+    }
+}
+
+.card {
+    display: grid;
+    grid-gap: 1rem;
+    background-color: $color-white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    &__name {
+        color: $color-grayish-blue;
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        font-style: italic;
+        @include respond(tab-port) {
+            font-size: 1.6rem;
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__text {
+        color: $color-grayish-blue;
+        font-size: 1.6rem;
+        text-align: justify;
+        padding: 0 1rem 2rem 1rem;
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+%heading {
+    color: $color-dark-Blue;
+    font-weight: 400;
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 4rem;
+    @include respond(tab-port) {
+        font-size: 5rem
+    }
+    @include respond(phone) {
+        font-size: 4rem;
+    }
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 2rem;
+    @include respond(tab-port) {
+        font-size: 2.8rem
+    }
+    @include respond(phone) {
+        text-align: center;
+    }
+}
+
+.heading-5 {
+    @extend %heading;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    line-height: 1.2;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .5s;
+    @include respond(tab-port) {
+        font-size: 2.4rem
+    }
+    &:hover {
+        color: $color-lime-green;
+        text-decoration: underline;
+    }
+}
+
+.lh {
+    line-height: 1.2 !important;
+}
+
+.ct-text {
+    @include respond(phone) {
+        text-align: center;
+    }
+}

@@ -1,0 +1,58 @@
+// ### Primary
+$color-dark-Blue: hsl(233, 26%, 24%);
+$color-lime-green: hsl(136, 65%, 51%);
+$color-bright-cyan: hsl(192, 70%, 51%);
+//### Neutral
+$color-grayish-blue: hsl(233, 8%, 62%);
+$color-light-grayish-blue: hsl(220, 16%, 96%);
+$color-very-light-gray: hsl(0, 0%, 98%);
+$color-white: hsl(0, 0%, 100%);
+// ###Reset of the Page
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @include respond(tab-land) {
+        // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+    @include respond(tab-port) {
+        // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-very-light-gray;
+    overflow-x: hidden;
+}
+
+// breakpoint == mobile
+.container {
+    display: grid;
+    grid-template-rows: min-content 90vh repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, minmax(min-content, 13rem))[center-end] minmax(6rem, 1fr) [full-end];
+    @include respond(tab-port) {
+        grid-template-rows: repeat(5, min-content);
+    }
+}
+
+.hidden {
+    @include respond(tab-port) {
+        display: none;
+    }
+}

@@ -1,0 +1,67 @@
+.footer {
+    background-color: $color-dark-Blue;
+    grid-column: full-start/full-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 4rem;
+    align-items: start;
+    padding: 10rem 11rem;
+    @include respond(phone) {
+        justify-content: center;
+    }
+    & a {
+        text-decoration: none;
+    }
+    &__info {
+        & li {
+            list-style: none;
+            @include respond(phone) {
+                text-align: center;
+            }
+            & a {
+                color: $color-white;
+                transition: all .3s;
+                &:hover {
+                    color: $color-lime-green;
+                }
+            }
+        }
+    }
+    &__copyright {
+        @include respond(phone) {
+            justify-self: center;
+        }
+    }
+    .copyright__text {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        color: $color-grayish-blue;
+    }
+    &__social {
+        margin-top: 2rem;
+        & a {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.wrap {
+    @include respond(phone) {
+        justify-self: center;
+    }
+    .info-item {
+        list-style: none;
+        @include respond(phone) {
+            text-align: center;
+        }
+        & a {
+            color: $color-white;
+            transition: all .3s;
+            &:hover {
+                color: $color-lime-green;
+            }
+        }
+    }
+}

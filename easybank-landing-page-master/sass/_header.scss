@@ -1,0 +1,217 @@
+.header {
+    background-color: $color-very-light-gray;
+    grid-column: full-start/full-end;
+    padding: 0 0 0 11rem;
+    position: relative;
+    @include respond(tab-port) {
+        padding: 32rem 11rem;
+    }
+    @include respond(phone) {
+        padding: 32rem 4rem;
+    }
+    &__wrap {
+        position: absolute;
+        z-index: 1000;
+        top: 15%;
+        width: 35vw;
+        @include respond(tab-port) {
+            width: 65vw;
+            top: 20%;
+            @include centerbox;
+        }
+    }
+    &__text {
+        color: $color-grayish-blue;
+        font-size: 1.5rem;
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.hero__image {
+    position: relative;
+    top: 0;
+    transform: translateX(46%);
+    background-image: url('../images/bg-intro-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 90vh;
+    @include respond(tab-port) {
+        display: none;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: -12rem;
+        transform: translateX(14%);
+        height: 160%;
+        width: 100%;
+        background-image: url('../images/image-mockups.png');
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+}
+
+.navigation {
+    grid-column: full-start/full-end;
+    padding: 2rem 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-white;
+    z-index: 1000;
+    @include respond(tab-port) {
+        padding: 3rem 11rem;
+    }
+    @include respond(phone) {
+        padding: 2rem 4rem;
+    }
+    &__logo {
+        height: 2.4rem;
+        @include respond(tab-port) {
+            height: 2.8rem;
+        }
+        @include respond(phone) {
+            height: 2.4rem;
+        }
+    }
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    @include respond(tab-port) {
+        display: none;
+    }
+    &__item {
+        list-style: none;
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+        &--link {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: $color-grayish-blue;
+            transition: all .5s;
+            position: relative;
+            &:hover {
+                color: $color-dark-Blue;
+                transition: all .5s;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -3.2rem;
+                    width: 100%;
+                    height: .3rem;
+                    background-image: linear-gradient(to right bottom, $color-lime-green, $color-bright-cyan);
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    font-size: 1.4rem;
+    color: $color-white;
+    border: none;
+    border-radius: 100px;
+    padding: 1.4rem 2.5rem;
+    background-image: linear-gradient(to right bottom, $color-lime-green, $color-bright-cyan);
+    cursor: pointer;
+    text-transform: capitalize;
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
+    @include respond(phone) {
+        padding: 1.8rem 3.5rem;
+    }
+}
+
+.mb-sm {
+    margin-bottom: 2rem !important;
+}
+
+.mb-md {
+    margin-bottom: 3rem !important;
+}
+
+.mb-lg {
+    margin-bottom: 4rem !important;
+}
+
+.mb-hg {
+    margin-bottom: 8rem !important;
+}
+
+// For mobile BreakPoint important
+.btn__mobile {
+    display: none;
+    @include respond(tab-port) {
+        display: block;
+        height: 1.8rem;
+        cursor: pointer;
+    }
+}
+
+.navigation__mobile {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2000;
+    top: 10%;
+    background-image: linear-gradient($color-dark-Blue, transparent);
+    @include respond(phone) {
+        top: 8%;
+    }
+}
+
+.mobile {
+    position: absolute;
+    background-color: $color-white;
+    left: 50%;
+    margin-top: 3rem;
+    transform: translateX(-50%);
+    width: 90%;
+    border-radius: .8rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-nav__item {
+        list-style: none;
+        font-size: 3rem;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+        &--link {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: $color-dark-Blue;
+            transition: color .5s;
+            &:hover {
+                background-image: linear-gradient(to right bottom, $color-lime-green, $color-bright-cyan);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}
+
+.btn-close {
+    height: 3rem;
+    transform: translateX(-5%);
+}
+
+.hidden-2 {
+    display: none;
+}
+
+.show {
+    display: block;
+}
